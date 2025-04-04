@@ -1,0 +1,12 @@
+# Cave Engine Git Ignore
+
+# Folders:
+Bin/
+Logs/
+Typings/
+
+# Local Files:
+thumbnail.png
+
+# Cache Files:
+*.cache
