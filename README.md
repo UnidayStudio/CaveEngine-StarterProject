@@ -4,6 +4,10 @@ Welcome to the **Cave Engine Starter Project** – the perfect foundation for yo
 
 This project is designed to **save you time** by providing essential systems that most games need, regardless of genre. Whether you're prototyping a new idea or kicking off full development, this starter pack has you covered.
 
+```
+Made for Cave Engine v1.2.0
+```
+
 ---
 
 ## 🚀 Features
