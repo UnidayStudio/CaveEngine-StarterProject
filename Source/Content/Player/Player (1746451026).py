@@ -99,10 +99,13 @@ class Player(cave.Component):
 			self.animator.playByName("p-fall", blend=0.2, loop=True)
 
 		# Updating the Health:
-		if events.active(cave.event.KEY_C):
-			self.entity.properties["health"] -= 1
-		if events.active(cave.event.KEY_V):
-			self.entity.properties["health"] += 1
+
+		# Using the "Cheating" keys to gain or lose health (editor only):
+		if cave.hasEditor():
+			if events.active(cave.event.KEY_C):
+				self.entity.properties["health"] -= 1
+			if events.active(cave.event.KEY_V):
+				self.entity.properties["health"] += 1
 		
 		# Clamping and Displaying the Health in the UI:
 		self.entity.properties["health"] = cave.math.clamp(self.entity.properties["health"], 0, 100)
